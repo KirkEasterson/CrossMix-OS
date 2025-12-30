@@ -20,7 +20,7 @@ endif
 	@if [ -z "$$($(TOOL) images -q $(TOOLCHAIN_NAME))" ]; then \
 		echo "Image not found, building..."; \
 		mkdir -p ./workspace; \
-		$(TOOL) build --platform linux/arm64 -t $(TOOLCHAIN_NAME) .; \
+		$(TOOL) build --platform linux/x86_64 -t $(TOOLCHAIN_NAME) .; \
 		touch .build; \
 	else \
 		echo "Image already exists, skipping build."; \

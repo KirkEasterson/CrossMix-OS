@@ -1,5 +1,5 @@
 # Uses monkeyx/retro_builder:arm64 as base image
-FROM monkeyx/retro_builder:arm64
+FROM monkeyx/retro_builder:x86_64
 
 # Install QEMU for cross-platform emulation
 RUN apt-get update && apt-get install -y \
